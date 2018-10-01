@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Filmes Famosos</string>
+    <string name="popularidade">Popularidade</string>
+    <string name="avaliacao">Avaliação</string>
+</resources>
