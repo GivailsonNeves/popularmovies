@@ -1,52 +1,59 @@
 package br.com.givailson.popularmoviesapp.services;
 
+
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.annotation.Nullable;
+import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class MovieService extends AsyncTask<URL, Void, String> {
+import br.com.givailson.popularmoviesapp.models.Movie;
 
-    private final static String BASE_MOVIE_API_PATH = "";
-    MovieServiceCallBack msb;
+public class MovieService extends AsyncTask<String, Void, String> {
 
-    MovieService(MovieServiceCallBack msb) {
+    private final static String BASE_MOVIE_API_PATH = "api.themoviedb.org";
+    private final static String APP_KEY = "841b5aca9f29628b2f94a63dc8c0e672";
+    private MovieServiceCallBack msb;
+    private List<Movie> listMovies;
+
+    public MovieService(MovieServiceCallBack msb) {
         this.msb = msb;
     }
 
-    public String listPopularMoviews() {
-        Uri uriBuilder = Uri.parse(BASE_MOVIE_API_PATH)
-                .buildUpon()
-                .build();
-
-        try {
-            URL url = new URL(uriBuilder.toString());
-            return this.doInBackground(url);
-        }catch (MalformedURLException me) {
-            me.printStackTrace();
-        }
-        return null;
-    }
-
     @Override
-    protected String doInBackground(URL... urls) {
-        URL servicePath = urls[0];
-        String movieResults = null;
+    protected String doInBackground(String... urls) {
+        String servicePath = urls[0];
+        Uri.Builder uriBuilder = new Uri.Builder();
+        uriBuilder.scheme("https")
+            .authority(BASE_MOVIE_API_PATH)
+            .appendPath("3")
+            .appendPath("movie")
+            .appendPath(servicePath)
+            .appendQueryParameter("api_key", APP_KEY);
+
         try{
-            movieResults = this.getResponseFromHttpUrl(servicePath);
+
+            this.getResponseFromHttpUrl(new URL(uriBuilder.toString()));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return movieResults;
+        return servicePath;
     }
 
-    private String getResponseFromHttpUrl(URL url) throws IOException {
+    private void getResponseFromHttpUrl(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
             InputStream in = urlConnection.getInputStream();
@@ -56,23 +63,33 @@ public class MovieService extends AsyncTask<URL, Void, String> {
 
             boolean hasInput = scanner.hasNext();
             if (hasInput) {
-                return scanner.next();
-            } else {
-                return null;
+                listMovies = new ArrayList<Movie>();
+
+                String res = scanner.next();
+
+                JSONObject mainLevel = new JSONObject(res);
+
+                JSONArray results = mainLevel.getJSONArray("results");
+
+                for ( int i = 0; i < results.length(); i++) {
+                    listMovies.add(Movie.fromJSONObject(results.getJSONObject(i)));
+                }
             }
+
+        } catch (JSONException je) {
+          je.printStackTrace();
         } finally {
             urlConnection.disconnect();
         }
     }
 
-
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        this.msb.onComplete(s);
+        this.msb.onComplete(listMovies);
     }
 
-    interface MovieServiceCallBack {
-        void onComplete(String s);
+    public interface MovieServiceCallBack {
+        void onComplete(List<Movie> movies);
     }
 }
