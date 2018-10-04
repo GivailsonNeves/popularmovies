@@ -4,18 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <GridView
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:id="@+id/gv_movies_list"
-        android:verticalSpacing="24dp"
-        android:horizontalSpacing="10dp"
-        android:stretchMode="columnWidth"
-        android:gravity="center"
-        android:numColumns="auto_fit"
-        android:columnWidth="150dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </GridView>
+
 
 </FrameLayout>
