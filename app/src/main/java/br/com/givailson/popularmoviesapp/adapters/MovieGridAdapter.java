@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -35,14 +38,21 @@ public class MovieGridAdapter extends ArrayAdapter<Movie> {
     }
 
     static class ViewHolder {
-
-        TextView tvTitle;
+        final String imageBasePath = "http://image.tmdb.org/t/p/w185/";
+        Context context;
+        ImageView imageView;
 
         ViewHolder(View root) {
-            tvTitle = root.findViewById(R.id.tv_title);
+
+            context = root.getContext();
+            imageView = root.findViewById(R.id.iv_poster);
         }
         void setMovie(Movie movie) {
-            tvTitle.setText(movie.getTitle());
+            StringBuilder urlPostor = new StringBuilder(imageBasePath)
+                    .append(movie.getUriPhoto());
+
+            Picasso.with(context).load(urlPostor.toString()).into(imageView);
+
         }
     }
 }

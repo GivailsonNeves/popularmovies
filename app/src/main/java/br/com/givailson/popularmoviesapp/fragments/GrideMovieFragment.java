@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,5 +59,13 @@ public class GrideMovieFragment extends Fragment implements AdapterView.OnItemCl
         this.movies = movies;
         movieGridAdapter = new MovieGridAdapter(getActivity(), this.movies);
         moviesGridView.setAdapter(movieGridAdapter);
+    }
+
+    public void orderBy(int itemId) {
+        if(itemId == R.id.mn_popularity) {
+            new MovieService(this).execute("popular");
+        }else if(itemId == R.id.mn_rate) {
+            new MovieService(this).execute("top_rated");
+        }
     }
 }

@@ -8,6 +8,8 @@ import org.json.JSONObject;
 
 import java.util.Date;
 
+import br.com.givailson.popularmoviesapp.utils.Util;
+
 public class Movie implements Parcelable {
 
     public long id;
@@ -57,7 +59,7 @@ public class Movie implements Parcelable {
             jsonObject.getString("poster_path"),
             jsonObject.getString("overview"),
             jsonObject.getDouble("vote_average"),
-            new Date()
+            Util.strToDate(jsonObject.getString("release_date"))
         );
     }
 
