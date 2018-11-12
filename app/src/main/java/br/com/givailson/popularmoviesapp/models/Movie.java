@@ -39,6 +39,16 @@ public class Movie implements Parcelable {
         releaseDate = new Date(in.readLong());
     }
 
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeLong(id);
+        dest.writeString(title);
+        dest.writeString(uriPhoto);
+        dest.writeString(sinopse);
+        dest.writeDouble(rate);
+        dest.writeLong(releaseDate.getTime());
+    }
+
     public static final Creator<Movie> CREATOR = new Creator<Movie>() {
         @Override
         public Movie createFromParcel(Parcel in) {
@@ -66,16 +76,6 @@ public class Movie implements Parcelable {
     @Override
     public int describeContents() {
         return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeLong(id);
-        dest.writeString(title);
-        dest.writeString(uriPhoto);
-        dest.writeString(sinopse);
-        dest.writeDouble(rate);
-        dest.writeLong(releaseDate.getTime());
     }
 
     public long getId() {

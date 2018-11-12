@@ -8,7 +8,7 @@ import java.util.Locale;
 public class Util {
 
     public static String datoToBRString(Date date) {
-        SimpleDateFormat sf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+        SimpleDateFormat sf = new SimpleDateFormat("dd/MM/yyyy");
         return sf.format(date);
     }
 
