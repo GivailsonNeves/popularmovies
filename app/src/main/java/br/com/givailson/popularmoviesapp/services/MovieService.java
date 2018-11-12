@@ -1,6 +1,8 @@
 package br.com.givailson.popularmoviesapp.services;
 
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.annotation.Nullable;
@@ -16,19 +18,38 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.Scanner;
 
+import br.com.givailson.popularmoviesapp.R;
 import br.com.givailson.popularmoviesapp.models.Movie;
 
 public class MovieService extends AsyncTask<String, Void, String> {
 
-    private final static String BASE_MOVIE_API_PATH = "api.themoviedb.org";
-    private final static String APP_KEY = "841b5aca9f29628b2f94a63dc8c0e672";
+    private static String BASE_MOVIE_API_PATH = "";
+    private static String APP_KEY = "";
     private MovieServiceCallBack msb;
     private List<Movie> listMovies;
 
     public MovieService(MovieServiceCallBack msb) {
+
         this.msb = msb;
+        initializeConfig();
+    }
+
+    private void initializeConfig() {
+        Resources resources = this.msb.getResources();
+        try {
+            InputStream rawResource = resources.openRawResource(R.raw.config);
+            Properties properties = new Properties();
+            properties.load(rawResource);
+            BASE_MOVIE_API_PATH = properties.getProperty("movie_api_url");
+            APP_KEY = properties.getProperty("movie_api_key");
+        } catch (Resources.NotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -91,5 +112,6 @@ public class MovieService extends AsyncTask<String, Void, String> {
 
     public interface MovieServiceCallBack {
         void onComplete(List<Movie> movies);
+        Resources getResources();
     }
 }
