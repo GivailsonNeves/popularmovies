@@ -2,6 +2,7 @@ package br.com.givailson.popularmoviesapp.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -43,8 +44,25 @@ public class GrideMovieFragment extends Fragment implements AdapterView.OnItemCl
         moviesGridView.setOnItemClickListener(this);
 
         new MovieService(this).execute("popular");
+        Log.i("GrideMovieFragment", "Tela criada e serviços chamado.");
 
         return rootView;
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
+        savedInstanceState.putParcelableArrayList("movies", (ArrayList<Movie>) this.movies);
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+        if(savedInstanceState != null) {
+            Log.i("GrideMovieFragment", "Estado restaurando.");
+            this.movies = savedInstanceState.getParcelableArrayList("movies");
+            mountList();
+        }
     }
 
     @Override
@@ -57,6 +75,11 @@ public class GrideMovieFragment extends Fragment implements AdapterView.OnItemCl
     @Override
     public void onComplete(List<Movie> movies) {
         this.movies = movies;
+        mountList();
+    }
+
+    private void mountList() {
+        Log.i("GrideMovieFragment", "Montar tela");
         movieGridAdapter = new MovieGridAdapter(getActivity(), this.movies);
         moviesGridView.setAdapter(movieGridAdapter);
     }

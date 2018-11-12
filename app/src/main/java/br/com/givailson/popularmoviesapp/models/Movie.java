@@ -6,10 +6,6 @@ import android.os.Parcelable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Date;
-
-import br.com.givailson.popularmoviesapp.utils.Util;
-
 public class Movie implements Parcelable {
 
     public long id;
@@ -17,11 +13,11 @@ public class Movie implements Parcelable {
     private String uriPhoto;
     private String sinopse;
     private double rate;
-    private Date releaseDate;
+    private String releaseDate;
 
     public Movie () {}
 
-    public Movie(long id, String title, String uriPhoto, String sinopse, double rate, Date releaseDate) {
+    public Movie(long id, String title, String uriPhoto, String sinopse, double rate, String releaseDate) {
         this.id = id;
         this.title = title;
         this.uriPhoto = uriPhoto;
@@ -36,7 +32,7 @@ public class Movie implements Parcelable {
         uriPhoto = in.readString();
         sinopse = in.readString();
         rate = in.readInt();
-        releaseDate = new Date(in.readLong());
+        releaseDate = in.readString();
     }
 
     @Override
@@ -46,7 +42,7 @@ public class Movie implements Parcelable {
         dest.writeString(uriPhoto);
         dest.writeString(sinopse);
         dest.writeDouble(rate);
-        dest.writeLong(releaseDate.getTime());
+        dest.writeString(releaseDate);
     }
 
     public static final Creator<Movie> CREATOR = new Creator<Movie>() {
@@ -69,7 +65,7 @@ public class Movie implements Parcelable {
             jsonObject.getString("poster_path"),
             jsonObject.getString("overview"),
             jsonObject.getDouble("vote_average"),
-            Util.strToDate(jsonObject.getString("release_date"))
+            jsonObject.getString("release_date")
         );
     }
 
@@ -118,11 +114,11 @@ public class Movie implements Parcelable {
         this.rate = rate;
     }
 
-    public Date getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 }

@@ -1,6 +1,7 @@
 package br.com.givailson.popularmoviesapp.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,7 @@ public class MovieGridAdapter extends ArrayAdapter<Movie> {
     }
 
     static class ViewHolder {
-        final String imageBasePath = "http://image.tmdb.org/t/p/w185/";
+        final String imageBasePath = "http://image.tmdb.org/t/p/w185";
         Context context;
         ImageView imageView;
 
@@ -51,6 +52,7 @@ public class MovieGridAdapter extends ArrayAdapter<Movie> {
             StringBuilder urlPostor = new StringBuilder(imageBasePath)
                     .append(movie.getUriPhoto());
 
+            Log.i("MovieGridAdapter", urlPostor.toString());
             Picasso.with(context).load(urlPostor.toString()).into(imageView);
 
         }
