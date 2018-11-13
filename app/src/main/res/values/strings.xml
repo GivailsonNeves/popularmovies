@@ -10,4 +10,6 @@
     <string name="erro_leitura">Erro ao ler dados do servidor!</string>
     <string name="grid_poster_url">http://image.tmdb.org/t/p/w500</string>
     <string name="grid_poster_inner_url">http://image.tmdb.org/t/p/w154</string>
+    <string name="nota">Nota:</string>
+    <string name="lancamento">Lançamento:</string>
 </resources>

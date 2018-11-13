@@ -16,17 +16,14 @@ import br.com.givailson.popularmoviesapp.models.Movie;
 
 public class MovieActivity extends AppCompatActivity {
 
-    private final String basePathImage;
+    private String basePathImage;
     private Movie movie;
-
-    public MovieActivity() {
-        this.basePathImage = getString(R.string.grid_poster_inner_url);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
+        this.basePathImage = getString(R.string.grid_poster_inner_url);
         prepareActionBar();
         prepareMovie();
     }
@@ -54,8 +51,8 @@ public class MovieActivity extends AppCompatActivity {
                     .append(movie.getUriPhoto());
 
             tvTitle.setText(movie.getTitle());
-            tvRate.setText("Nota: " + movie.getRate());
-            tvReleaseDate.setText("Lançamento: " + movie.getReleaseDate());
+            tvRate.setText(getString(R.string.nota) + movie.getRate());
+            tvReleaseDate.setText(getString(R.string.lancamento) + movie.getReleaseDate());
             tvReview.setText(movie.getOverview());
             Picasso.with(this).load(urlImage.toString()).into(ivPoster);
         } else {
