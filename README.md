@@ -6,6 +6,6 @@ No caminho <raiz do projeto>/app/src/main/res/raw/, copie o arquivo **example_co
 
 #### example_config.properties
 ```
- movie_api_url=api.themoviedb.org<br>
+ movie_api_url=api.themoviedb.org
  movie_api_key=<<chave da movie api>>
 ```
