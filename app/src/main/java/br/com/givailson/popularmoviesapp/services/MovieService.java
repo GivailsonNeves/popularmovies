@@ -1,12 +1,9 @@
 package br.com.givailson.popularmoviesapp.services;
 
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.support.annotation.Nullable;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,9 +27,11 @@ public class MovieService extends AsyncTask<String, Void, String> {
     private static String APP_KEY = "";
     private MovieServiceCallBack msb;
     private List<Movie> listMovies;
+    private final Context context;
 
-    public MovieService(MovieServiceCallBack msb) {
+    public MovieService(MovieServiceCallBack msb, Context context) {
 
+        this.context = context;
         this.msb = msb;
         initializeConfig();
     }
@@ -68,40 +67,37 @@ public class MovieService extends AsyncTask<String, Void, String> {
             this.getResponseFromHttpUrl(new URL(uriBuilder.toString()));
 
         } catch (IOException e) {
-            e.printStackTrace();
+            this.msb.onError(context.getString(R.string.erro_carregamento));
+        } catch (JSONException je) {
+            this.msb.onError(context.getString(R.string.erro_leitura));
         }
 
         return servicePath;
     }
 
-    private void getResponseFromHttpUrl(URL url) throws IOException {
+    private void getResponseFromHttpUrl(URL url) throws IOException, JSONException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-        try {
-            InputStream in = urlConnection.getInputStream();
 
-            Scanner scanner = new Scanner(in);
-            scanner.useDelimiter("\\A");
+        InputStream in = urlConnection.getInputStream();
 
-            boolean hasInput = scanner.hasNext();
-            if (hasInput) {
-                listMovies = new ArrayList<Movie>();
+        Scanner scanner = new Scanner(in);
+        scanner.useDelimiter("\\A");
 
-                String res = scanner.next();
+        boolean hasInput = scanner.hasNext();
+        if (hasInput) {
+            listMovies = new ArrayList<>();
 
-                JSONObject mainLevel = new JSONObject(res);
+            String res = scanner.next();
 
-                JSONArray results = mainLevel.getJSONArray("results");
+            JSONObject mainLevel = new JSONObject(res);
 
-                for ( int i = 0; i < results.length(); i++) {
-                    listMovies.add(Movie.fromJSONObject(results.getJSONObject(i)));
-                }
+            JSONArray results = mainLevel.getJSONArray("results");
+
+            for ( int i = 0; i < results.length(); i++) {
+                listMovies.add(Movie.fromJSONObject(results.getJSONObject(i)));
             }
-
-        } catch (JSONException je) {
-          je.printStackTrace();
-        } finally {
-            urlConnection.disconnect();
         }
+        urlConnection.disconnect();
     }
 
     @Override
@@ -112,6 +108,7 @@ public class MovieService extends AsyncTask<String, Void, String> {
 
     public interface MovieServiceCallBack {
         void onComplete(List<Movie> movies);
+        void onError(String errorMessage);
         Resources getResources();
     }
 }

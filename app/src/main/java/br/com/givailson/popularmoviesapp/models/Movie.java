@@ -6,26 +6,22 @@ import android.os.Parcelable;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Date;
-
-import br.com.givailson.popularmoviesapp.utils.Util;
-
 public class Movie implements Parcelable {
 
     public long id;
     private String title;
     private String uriPhoto;
-    private String sinopse;
+    private String overview;
     private double rate;
-    private Date releaseDate;
+    private String releaseDate;
 
     public Movie () {}
 
-    public Movie(long id, String title, String uriPhoto, String sinopse, double rate, Date releaseDate) {
+    public Movie(long id, String title, String uriPhoto, String overview, double rate, String releaseDate) {
         this.id = id;
         this.title = title;
         this.uriPhoto = uriPhoto;
-        this.sinopse = sinopse;
+        this.overview = overview;
         this.rate = rate;
         this.releaseDate = releaseDate;
     }
@@ -34,9 +30,9 @@ public class Movie implements Parcelable {
         id = in.readLong();
         title = in.readString();
         uriPhoto = in.readString();
-        sinopse = in.readString();
-        rate = in.readInt();
-        releaseDate = new Date(in.readLong());
+        overview = in.readString();
+        rate = in.readDouble();
+        releaseDate = in.readString();
     }
 
     @Override
@@ -44,9 +40,9 @@ public class Movie implements Parcelable {
         dest.writeLong(id);
         dest.writeString(title);
         dest.writeString(uriPhoto);
-        dest.writeString(sinopse);
+        dest.writeString(overview);
         dest.writeDouble(rate);
-        dest.writeLong(releaseDate.getTime());
+        dest.writeString(releaseDate);
     }
 
     public static final Creator<Movie> CREATOR = new Creator<Movie>() {
@@ -69,7 +65,7 @@ public class Movie implements Parcelable {
             jsonObject.getString("poster_path"),
             jsonObject.getString("overview"),
             jsonObject.getDouble("vote_average"),
-            Util.strToDate(jsonObject.getString("release_date"))
+            jsonObject.getString("release_date")
         );
     }
 
@@ -102,12 +98,12 @@ public class Movie implements Parcelable {
         this.uriPhoto = uriPhoto;
     }
 
-    public String getSinopse() {
-        return sinopse;
+    public String getOverview() {
+        return overview;
     }
 
-    public void setSinopse(String sinopse) {
-        this.sinopse = sinopse;
+    public void setOverview(String sinopse) {
+        this.overview = sinopse;
     }
 
     public double getRate() {
@@ -118,11 +114,7 @@ public class Movie implements Parcelable {
         this.rate = rate;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
-    }
+    public String getReleaseDate() { return releaseDate; }
 
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
-    }
+    public void setReleaseDate(String releaseDate) { this.releaseDate = releaseDate; }
 }

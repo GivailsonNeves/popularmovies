@@ -7,6 +7,11 @@
 /.idea/workspace.xml
 .DS_Store
 /build
+/app/build
 /captures
 .externalNativeBuild
+<<<<<<< HEAD
 /app/src/main/raw/config.properties
+=======
+/app/src/main/res/raw/config.properties
+>>>>>>> ea1b7f7686fb496422c0a5403300dc0374f187e1
