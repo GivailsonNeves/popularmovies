@@ -1,13 +1,11 @@
 package br.com.givailson.popularmoviesapp.adapters;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -39,22 +37,28 @@ public class MovieGridAdapter extends ArrayAdapter<Movie> {
     }
 
     static class ViewHolder {
-        final String imageBasePath = "http://image.tmdb.org/t/p/w185";
-        Context context;
-        ImageView imageView;
+        private static final int IMAGE_DEFAULT_HEIGHT = 750;
+        private static final int IMAGE_DEFAULT_WIDTH = 500;
+        private final String imageBasePath;
+        private Context context;
+        private ImageView imageView;
+        private int windowSize;
 
         ViewHolder(View root) {
 
             context = root.getContext();
+            imageBasePath = context.getString(R.string.grid_poster_url);
             imageView = root.findViewById(R.id.iv_poster);
+
+            windowSize = root.getResources().getDisplayMetrics().widthPixels;
+            final int imageWidthSize = windowSize / 2;
+            imageView.getLayoutParams().width = imageWidthSize;
+            imageView.getLayoutParams().height = (int) ( IMAGE_DEFAULT_HEIGHT * ((float) imageWidthSize / IMAGE_DEFAULT_WIDTH) );
         }
         void setMovie(Movie movie) {
-            StringBuilder urlPostor = new StringBuilder(imageBasePath)
-                    .append(movie.getUriPhoto());
-
-            Log.i("MovieGridAdapter", urlPostor.toString());
-            Picasso.with(context).load(urlPostor.toString()).into(imageView);
-
+            String urlPoster = imageBasePath +
+                    movie.getUriPhoto();
+            Picasso.with(context).load(urlPoster).into(imageView);
         }
     }
 }

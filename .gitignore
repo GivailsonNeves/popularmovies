@@ -9,4 +9,4 @@
 /build
 /captures
 .externalNativeBuild
-/app/src/main/raw/config.properties
+/app/src/main/res/raw/config.properties

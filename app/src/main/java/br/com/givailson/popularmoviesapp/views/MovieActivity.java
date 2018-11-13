@@ -16,8 +16,12 @@ import br.com.givailson.popularmoviesapp.models.Movie;
 
 public class MovieActivity extends AppCompatActivity {
 
-    private final String basePathImage = "http://image.tmdb.org/t/p/w500/";
+    private final String basePathImage;
     private Movie movie;
+
+    public MovieActivity() {
+        this.basePathImage = getString(R.string.grid_poster_inner_url);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class MovieActivity extends AppCompatActivity {
         this.movie = getIntent().getParcelableExtra("movie");
 
         TextView tvTitle = findViewById(R.id.tv_title);
+        TextView tvRate = findViewById(R.id.tv_rate);
         TextView tvReview = findViewById(R.id.tv_review);
         TextView tvReleaseDate = findViewById(R.id.tv_release_date);
         ImageView ivPoster = findViewById(R.id.iv_movie_poster);
@@ -49,8 +54,9 @@ public class MovieActivity extends AppCompatActivity {
                     .append(movie.getUriPhoto());
 
             tvTitle.setText(movie.getTitle());
-            tvReleaseDate.setText(movie.getReleaseDate());
-            tvReview.setText(movie.getSinopse());
+            tvRate.setText("Nota: " + movie.getRate());
+            tvReleaseDate.setText("Lançamento: " + movie.getReleaseDate());
+            tvReview.setText(movie.getOverview());
             Picasso.with(this).load(urlImage.toString()).into(ivPoster);
         } else {
             tvTitle.setText(R.string.erro_movie_view);

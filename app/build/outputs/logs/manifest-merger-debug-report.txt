@@ -1,0 +1,182 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\7fe4447e9f9ca4a7564edb68169d711c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca54e6edf05cf8ecaf75ac1dd715189\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4f6c97528475ce99d86f0ad7e5c46db8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a45d7966a7fe1480eb833c0fd889799e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e2a77fdd76e493cb5f751258aa35344b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5375cc7c59a80abb50b2d8331ff4ef76\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\1d3352e287de0bad2c305a151f94ab31\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\fdd4c3d1dac26af094351bc1e0a4d24e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c248fe134e6b7008b14e9fae3d075179\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\abcb7a64e35967c0ac9352b379ba019b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c53178fd13c77139be5e1c5c25f594b6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc6e1f1b9a95350c1e72250fc06d571b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\18ed9c1630058cedcb3a2d57cf43490c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e9e83296eeaa8f3bcaa126c427a419cc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\dbaa6e9443c7e8261f381e4360ea7d14\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ffa5789ced66c0ad4951bac7be5d86ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1f1422d35a30371b92b604ad44530623\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\346927b2cc9969733bdc84eb3801ccaf\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\de22d6e90300c5758455433913e1493b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\400b1ff8a96fe6a782415c32c9b1e8bd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\0ba4322321298b24f7ddbbeff2502c79\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\c3bf628a3e2fd52e2ca47704a765523e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d554b08b7096cbb323f9bcf1523f9478\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\628a70b7a99b017dca0d5885510716be\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\3a3dc216f5010a9f1a68200a8305c491\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4b0e87bbe446b6122d6eab4a3a6e1282\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\833e787830352e43c190a60501b1b7ee\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a35978da6edec23a3b267a7049789560\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:8:5-28:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca54e6edf05cf8ecaf75ac1dd715189\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca54e6edf05cf8ecaf75ac1dd715189\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\346927b2cc9969733bdc84eb3801ccaf\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\346927b2cc9969733bdc84eb3801ccaf\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:14:9-40
+activity#br.com.givailson.popularmoviesapp.MainActivity
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:15:9-22:20
+	android:launchMode
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:16:13-43
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:20:27-74
+activity#br.com.givailson.popularmoviesapp.views.MovieActivity
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:23:9-27:20
+	android:parentActivityName
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:23:55-97
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:23:19-54
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:24:13-26:48
+	android:value
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:26:17-46
+	android:name
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml:25:17-63
+uses-sdk
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\7fe4447e9f9ca4a7564edb68169d711c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\7fe4447e9f9ca4a7564edb68169d711c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca54e6edf05cf8ecaf75ac1dd715189\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca54e6edf05cf8ecaf75ac1dd715189\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4f6c97528475ce99d86f0ad7e5c46db8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\4f6c97528475ce99d86f0ad7e5c46db8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a45d7966a7fe1480eb833c0fd889799e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a45d7966a7fe1480eb833c0fd889799e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e2a77fdd76e493cb5f751258aa35344b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e2a77fdd76e493cb5f751258aa35344b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5375cc7c59a80abb50b2d8331ff4ef76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5375cc7c59a80abb50b2d8331ff4ef76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\1d3352e287de0bad2c305a151f94ab31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\1d3352e287de0bad2c305a151f94ab31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\fdd4c3d1dac26af094351bc1e0a4d24e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\fdd4c3d1dac26af094351bc1e0a4d24e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c248fe134e6b7008b14e9fae3d075179\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\c248fe134e6b7008b14e9fae3d075179\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\abcb7a64e35967c0ac9352b379ba019b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\abcb7a64e35967c0ac9352b379ba019b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c53178fd13c77139be5e1c5c25f594b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\c53178fd13c77139be5e1c5c25f594b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc6e1f1b9a95350c1e72250fc06d571b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\fc6e1f1b9a95350c1e72250fc06d571b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\18ed9c1630058cedcb3a2d57cf43490c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\18ed9c1630058cedcb3a2d57cf43490c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e9e83296eeaa8f3bcaa126c427a419cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e9e83296eeaa8f3bcaa126c427a419cc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\dbaa6e9443c7e8261f381e4360ea7d14\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\dbaa6e9443c7e8261f381e4360ea7d14\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ffa5789ced66c0ad4951bac7be5d86ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ffa5789ced66c0ad4951bac7be5d86ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1f1422d35a30371b92b604ad44530623\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1f1422d35a30371b92b604ad44530623\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\4035325812028f3ae9e7accae6a3a8ea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\346927b2cc9969733bdc84eb3801ccaf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\346927b2cc9969733bdc84eb3801ccaf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\de22d6e90300c5758455433913e1493b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\de22d6e90300c5758455433913e1493b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\400b1ff8a96fe6a782415c32c9b1e8bd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\400b1ff8a96fe6a782415c32c9b1e8bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\0ba4322321298b24f7ddbbeff2502c79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\0ba4322321298b24f7ddbbeff2502c79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\c3bf628a3e2fd52e2ca47704a765523e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\c3bf628a3e2fd52e2ca47704a765523e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d554b08b7096cbb323f9bcf1523f9478\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d554b08b7096cbb323f9bcf1523f9478\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\628a70b7a99b017dca0d5885510716be\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\628a70b7a99b017dca0d5885510716be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\3a3dc216f5010a9f1a68200a8305c491\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\3a3dc216f5010a9f1a68200a8305c491\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4b0e87bbe446b6122d6eab4a3a6e1282\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\4b0e87bbe446b6122d6eab4a3a6e1282\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\833e787830352e43c190a60501b1b7ee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\833e787830352e43c190a60501b1b7ee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a35978da6edec23a3b267a7049789560\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\givailsonneves\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a35978da6edec23a3b267a7049789560\AndroidManifest.xml:20:5-44
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Udacity\Projetos\popularmovies\app\src\main\AndroidManifest.xml
