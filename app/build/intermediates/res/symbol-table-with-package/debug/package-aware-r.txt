@@ -633,7 +633,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable eva_movie
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -875,6 +874,7 @@ menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw config
+raw example_config
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -921,8 +921,8 @@ string connection_fail
 string erro_carregamento
 string erro_leitura
 string erro_movie_view
+string grid_poster_inner_url
 string grid_poster_url
-string hello_blank_fragment
 string popularidade
 string search_menu_title
 string status_bar_notification_info_overflow

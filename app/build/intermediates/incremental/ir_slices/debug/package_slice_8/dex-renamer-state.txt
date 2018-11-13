@@ -1,4 +1,4 @@
-#Tue Nov 13 17:23:49 BRST 2018
+#Tue Nov 13 18:18:40 BRST 2018
 base.0=C\:\\Udacity\\Projetos\\popularmovies\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
 path.0=classes.dex
 renamed.0=classes.dex
